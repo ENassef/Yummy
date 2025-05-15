@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy Exam [Eslam Nassef (CodeBreaker)]</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+</head>
+
+<body class="bg-gray-800 capitalize overflow-x-hidden overflow-hidden">
+
+    <div class="h-screen w-full bg-gray-800 flex justify-center items-center fixed z-10 loding ">
+        <img src="./src/images/Animation - 1747330935699.gif" alt="" class="w-64">
+    </div>
+
+    <main class="flex flex-col">
+        <nav class="bg-black text-white w-1/2 max-w-full md:w-[300px] flex h-screen z-20 md:-translate-x-[300px] -translate-x-full fixed">
+            <div id="nav-list" class="flex justify-between flex-col h-screen p-6 overflow-hidden w-3/4">
+                <ul class="list space-y-3">
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        Home
+                    </li>
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        Search
+                    </li>
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        Categories
+                    </li>
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        area
+                    </li>
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        Ingredients
+                    </li>
+                    <li class="text-2xl italic cursor-pointer hover:text-[#FCCF11]">
+                        Contact Us
+                    </li>
+                </ul>
+                <div id="social">
+                    <ul class="flex space-x-4 mb-2">
+                        <li>
+                            <a href="https://www.facebook.com/islam.nassef.35/" target="_blank"
+                                class="hover:text-[#FCCF11]">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-[#FCCF11]">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/eslam-nassef-0b1b1b1b1/" target="_blank"
+                                class="hover:text-[#FCCF11]">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright flex flex-wrap">
+                        <span class="pr-1">&copy; 2025</span>
+                        <span>CodeBreaker</span>
+                        <span>All Rights Reserved</span>
+                    </p>
+                </div>
+            </div>
+            <div id="openNav" class="h-screen bg-white flex flex-col justify-between items-center w-1/4 translate-x-full">
+                <img src="./src/images/YummyEmojii.png" alt="Yummy Emojii" class="w-16 mx-auto mt-4" />
+                <i class="fas fa-bars text-black text-4xl cursor-pointer" id="bars"></i>
+                <div class="flex flex-col space-y-1 mb-4">
+                    <a href="#" class="icon text-black">
+                        <i class="fas fa-globe fa-lg"></i>
+                    </a>
+                    <a href="#" class="icon text-black">
+                        <i class="fas fa-share-alt fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="content" class=" w-10/12 p-12 mt-10 mx-auto">    
+
+        </section>
+
+
+
+    </main>
+
+    <!-- Import Map for ES Modules -->
+    <script type="importmap">
+            {
+                "imports": {
+                    "gsap": "./node_modules/gsap/index.js",
+                    "gsap/ScrollTrigger": "./node_modules/gsap/ScrollTrigger.js",
+                    "gsap/ScrollSmoother": "./node_modules/gsap/ScrollSmoother.js",
+                    "gsap/SplitText": "./node_modules/gsap/SplitText.js",
+                    "aos": "./node_modules/aos/dist/aos.js"
+                }
+            }
+        </script>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
+
+    <script src="./src/js/Main.js" type="module"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
