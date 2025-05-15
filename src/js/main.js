@@ -145,10 +145,11 @@ jQuery(function ($) {
                             }
                         }
 
+
                         const mealCard = `
                         <div class="overflow-hidden relative cursor-pointer meal rounded-2xl shadow-lg transition-all duration-300 group"
                             data-aos="fade-up" 
-                            data-aos-delay="${index + 100}"
+                            data-aos-delay="${index < 12 ? index * 100 : 1}"
                             data-mealID="${mealID}">
                             <img src="${mealImage}" alt="${mealName}" 
                                 class="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"/>
