@@ -149,7 +149,7 @@ jQuery(function ($) {
                         const mealCard = `
                         <div class="overflow-hidden relative cursor-pointer meal rounded-2xl shadow-lg transition-all duration-300 group"
                             data-aos="fade-up" 
-                            data-aos-delay="${index < 12 ? index * 100 : 1}"
+                            data-aos-delay="${index < 12 ? index * 100 : 100}"
                             data-mealID="${mealID}">
                             <img src="${mealImage}" alt="${mealName}" 
                                 class="w-full h-full object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"/>
@@ -854,7 +854,7 @@ jQuery(function ($) {
                                     data-aos="fade-up" data-aos-delay="700">
                                 <p class="error text-red-500 text-sm mt-1 hidden">Passwords do not match</p>
                             </div>
-                            <button id="sendBtn" class="w-full bg-amber-600 text-white py-3 rounded-lg font-bold text-lg hover:scale-105 transition-transform disabled:opacity-10 disabled:cursor-not-allowed"
+                            <button id="sendBtn" class="cursor-pointer w-full bg-amber-600 text-white py-3 rounded-lg font-bold text-lg hover:scale-105 transition-transform disabled:opacity-10 disabled:cursor-not-allowed"
                                 disabled data-aos="zoom-in" data-aos-delay="800">
                                 Send Message
                             </button>
